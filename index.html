@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isis & Shea — Wedding</title>
+  <meta name="description" content="Wedding details, travel, and RSVP for Isis Freeman & Shea Martin." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="landing.html" aria-label="Back to landing">I ♡ S</a>
+
+    <nav class="nav">
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="about.html" >Our Story</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="travel.html">Travel</a>
+<a href="faq.html">FAQ</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="registry.html">Registry</a>
+</nav>
+
+
+
+    <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </header>
+
+  <nav class="mobileNav" id="mobileNav" hidden>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="about.html">Our Story</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="travel.html">Travel</a>
+<a href="faq.html">FAQ</a>  
+<a href="rsvp.html">RSVP</a>
+  <a href="registry.html">Registry</a>
+</nav>
+
+
+
+  <main id="home">
+<div class="floaters" aria-hidden="true"></div>
+
+    <section class="hero">
+      <div class="heroInner">
+        <h1>Isis Freeman <span class="amp">&</span> Shea Martin</h1>
+<div class="heroCenter">        
+<p class="sub">Saturday, June 27, 2026 • 1324 Roscoe Rd, Newnan, GA 30263</p>
+
+        <div class="countdown" aria-label="Countdown to wedding">
+          <div class="pill"><span id="dd">–</span><small>Days</small></div>
+          <div class="pill"><span id="hh">–</span><small>Hours</small></div>
+          <div class="pill"><span id="mm">–</span><small>Minutes</small></div>
+          <div class="pill"><span id="ss">–</span><small>Seconds</small></div>
+        </div>
+<!-- Polaroid overlays (top aligned to bottom of countdown) -->
+<div class="heroPolaroids" aria-hidden="true">
+  <figure class="polaroid polaroidLeft">
+    <img src="assets/home_card_left.jpg" alt="" />
+  </figure>
+
+  <figure class="polaroid polaroidRight">
+    <img src="assets/home_card_right.jpg" alt="" />
+  </figure>
+</div>
+
+<div class="audioBar" aria-label="Background music controls">
+  <button class="btn small" id="audioToggleBtn" type="button">Play music</button>
+  <span class="muted" id="audioStatus">Off</span>
+
+  <audio id="homeAudio" preload="metadata" loop>
+    <source src="assets/audio/LH_pt2.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+
+        <p class="heroNote">From Atlanta, with Love.</p>
+      </div>
+    </section>
+
+    <section id="details" class="section">
+      <div class="container">
+        <h2>Details</h2>
+       <div class="grid3">
+  <div class="card">
+    <h3>Ceremony</h3>
+    <p><strong>4:30 PM</strong></p>
+    <p>Vinewood Stables</p>
+    <p class="muted">1324 Roscoe Rd, Newnan, GA 30263</p>
+  </div>
+
+  <div class="card">
+    <h3>Cocktail Hour</h3>
+    <p><strong>5:00 PM</strong></p>
+    <p>Vinewood Stables</p>
+    <p class="muted">Drinks, bites, and photos before dinner.</p>
+  </div>
+
+  <div class="card">
+    <h3>Reception</h3>
+    <p><strong>6:00 PM</strong></p>
+    <p>Vinewood Stables</p>
+    <p class="muted">Dinner, dancing, and a little dust on the boots.</p>
+  </div>
+</div>
+
+
+        <div class="card note">
+          <p><strong>Dress code:</strong> Rustic formal (fly attire only; stable-friendly shoes).</p>
+          <p><strong>RSVP deadline:</strong> April 15, 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <h2>Schedule</h2>
+        <ul class="timeline">
+          <li><span class="time">4:00 PM</span><span class="item">Arrivals</span></li>
+          <li><span class="time">4:30 PM</span><span class="item">Ceremony</span></li>
+          <li><span class="time">5:00 PM</span><span class="item">Cocktail hour</span></li>
+          <li><span class="time">6:00 PM</span><span class="item">First Dances + Toasts</span></li>
+          <li><span class="time">8:00 PM</span><span class="item">Dancing</span></li>
+          <li><span class="time">10:00 PM</span><span class="item">Send-off</span></li>
+        </ul>
+      </div>
+    </section>
+
+    
+     
+
+    
+      
+          
+
+    
+      
+
+    
+      
+
+    <footer class="footer">
+      <p>Isis & Shea • <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
