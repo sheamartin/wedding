@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isis & Shea — RSVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="landing.html">I ♡ S</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">Our Story</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="travel.html">Travel</a>
+      <a href="rsvp.html" aria-current="page">RSVP</a>
+      <a href="faq.html">FAQ</a>
+      <a href="registry.html">Registry</a>
+    </nav>
+    <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </header>
+
+  <nav class="mobileNav" id="mobileNav" hidden>
+    <a href="index.html">Home</a>
+    <a href="about.html">Our Story</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="travel.html">Travel</a>
+    <a href="rsvp.html" aria-current="page">RSVP</a>
+    <a href="faq.html">FAQ</a>
+    <a href="registry.html">Registry</a>
+  </nav>
+
+  <section class="section alt">
+  <div class="container">
+<p class="kicker">Look for yourself</p>
+     <h1 class="pageTitle">Find Your Invitation</h1>
+        <p class="sub">We look forward to your presence</p>
+      </div>
+      
+    </div>
+
+    <form class="card form" id="rsvpForm" novalidate>
+      <!-- Guest lookup -->
+      <label>
+        Guest name
+        <input
+          id="guestLookup"
+          name="guestLookup"
+          autocomplete="name"
+          placeholder="e.g., Shea Martin"
+          required
+        />
+      </label>
+
+      <div class="actions">
+        <button class="btn primary" id="confirmGuestBtn" type="button" disabled>Confirm name</button>
+        <button class="btn" id="editGuestBtn" type="button" hidden>Edit name</button>
+      </div>
+
+      <p class="status" id="guestStatus" role="status" aria-live="polite"></p>
+
+      <!-- 🔒 Locked until confirmed -->
+<div id="rsvpFields" hidden>
+  <div class="card" style="padding:0; overflow:hidden;">
+    <iframe
+      id="googleRsvpForm"
+      title="Wedding RSVP Form"
+      src=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      style="width:100%; height:1350px; border:0; display:block;"
+    >
+      Loading…
+    </iframe>
+  </div>
+</div>
+
+
+      <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+
+    <footer class="footer"><p>Isis & Shea • <span id="year"></span></p></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

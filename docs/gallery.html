@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Isis & Shea — Gallery</title>
+  <meta name="description" content="Photo gallery for Isis Freeman and Shea Martin." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="landing.html" aria-label="Back to landing">I ♡ S</a>
+
+    <nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">Our Story</a>
+  <a href="gallery.html" aria-current="page">Gallery</a>
+  <a href="travel.html">Travel</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="faq.html">FAQ</a>
+  <a href="registry.html">Registry</a>
+</nav>
+
+
+    <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </header>
+
+  <nav class="mobileNav" id="mobileNav" hidden>
+  <a href="index.html">Home</a>
+  <a href="about.html">Our Story</a>
+  <a href="gallery.html" aria-current="page">Gallery</a>
+  <a href="travel.html">Travel</a>
+  <a href="rsvp.html">RSVP</a>
+  <a href="faq.html">FAQ</a>
+  <a href="registry.html">Registry</a>
+</nav>
+
+
+  <main>
+    <section class="pageHero">
+      <div class="container">
+        <p class="kicker">Moments</p>
+        <h1 class="pageTitle">Photo Gallery</h1>
+        <p class="sub">Engagement photos, memories, and everything that led to June 27, 2026.</p>
+      </div>
+    </section>
+
+    
+<div class="galleryShell">
+  <div class="galleryToolbar">
+   
+  </div>
+        <div class="galleryGrid" id="galleryGrid" aria-label="Photo gallery grid">
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog" aria-label="Image viewer">
+  <button type="button" class="lightboxClose" id="lightboxClose" aria-label="Close">✕</button>
+  <button type="button" class="lightboxNav left" id="lightboxPrev" aria-label="Previous">‹</button>
+  <img class="lightboxImg" id="lightboxImg" alt="" />
+  <button type="button" class="lightboxNav right" id="lightboxNext" aria-label="Next">›</button>
+  <p class="lightboxCaption" id="lightboxCaption"></p>
+</div>
+
+    <footer class="footer">
+      <p>Isis & Shea • <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
